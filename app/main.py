@@ -29,7 +29,7 @@ class Carnivore(Animal):
         if victim.health <= 0:
             Animal.alive.remove(victim)
 
-
+#hiders
 class Herbivore(Animal):
 
     def hide(self) -> None:
