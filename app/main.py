@@ -1,5 +1,5 @@
 class Animal:
-    alive = []
+    alive: list[Animal] = []
 
     def __init__(self,
                  name: str,
@@ -24,6 +24,7 @@ class Carnivore(Animal):
             return None
         if isinstance(victim, Carnivore):
             print(f"{victim.name} is Carnivore")
+            return None
         else:
             victim.health -= 50
         if victim.health <= 0:
